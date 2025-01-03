@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Registration Form</h1>
+<form id="registrationForm">
+    <div class="form-group">
+        <label for="name">Name (2-30 characters, letters only)</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error" id="nameError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error" id="emailError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age (18-120)</label>
+        <input type="number" id="age" name="age" required>
+        <div class="error" id="ageError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone (+x xx xxxxx)</label>
+        <input type="text" id="phone" name="phone" required>
+        <div class="error" id="phoneError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password (8+ characters, uppercase, lowercase, number, special character)</label>
+        <input type="password" id="password" name="password" required>
+        <div class="error" id="passwordError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <div class="error" id="confirmPasswordError"></div>
+    </div>
+
+    <button type="submit">Register</button>
+    <div class="success" id="successMessage"></div>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
